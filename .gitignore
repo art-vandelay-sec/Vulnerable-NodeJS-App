@@ -1,0 +1,26 @@
+# Node.js dependencies
+node_modules/
+
+# Environment variables
+.env
+
+# Logs
+*.log
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# IDE / Editor files
+.vscode/
+.idea/
+
+# Compiled files
+*.compiled
+*.cache
+
+# OS generated files
+.DS_Store
+Thumbs.db

@@ -7,14 +7,19 @@
   <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
-  <h1>Welcome to <%= title %></h1>
-  <% if (!userId) { %>
-    <a href="/register">Register</a> | <a href="/login">Login</a>
-  <% } else { %>
-    <p>You
-    <p>You are logged in.</p>
-    <a href="/logout">Logout</a>
-  <% } %>
+  <header>
+    <h1><%= title %> - Coffee Shop</h1>
+    <% if (!userId) { %>
+      <a href="/register">Register</a> | <a href="/login">Login</a>
+    <% } else { %>
+      <a href="/logout">Logout</a>
+    <% } %>
+  </header>
+  <div class="container">
+    <section class="hero">
+      <p>Welcome to our coffee shop!</p>
+    </section>
+  </div>
   <script src="/js/script.js"></script>
 </body>
 </html>
