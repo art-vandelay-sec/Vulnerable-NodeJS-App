@@ -1,7 +1,7 @@
-const index = (req, res) => {
-    res.render('index', { title: 'My Web App' });
-  };
-  
-  module.exports = {
-    index,
-  };
+exports.index = (req, res) => {
+  const userId = req.session.userId || null; // Get the userId from session or set it to null
+  res.render('index', {
+    title: 'Your App Title',
+    userId: userId,
+  });
+};

@@ -8,6 +8,13 @@
 </head>
 <body>
   <h1>Welcome to <%= title %></h1>
+  <% if (!userId) { %>
+    <a href="/register">Register</a> | <a href="/login">Login</a>
+  <% } else { %>
+    <p>You
+    <p>You are logged in.</p>
+    <a href="/logout">Logout</a>
+  <% } %>
   <script src="/js/script.js"></script>
 </body>
 </html>
